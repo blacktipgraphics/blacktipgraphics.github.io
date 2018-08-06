@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/upload/upload.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <title>Upload</title>
+    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+  </head>
+  <body>
+
+    <div class="nav">
+      <header>
+        <nav>
+          <a href="index.html"><li>Home</li></a>
+          <a href="digitizing.html"><li>Digitizing</li></a>
+          <a href="designing.html"><li>Design</li></a>
+          <a href="store.html"><li>Store</li></a>
+          <a href="#"><li>Upload</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </nav>
+      </header>
+    </div>
+
+
+    <div class="home-container">
+
+      <div class="landing-area">
+        <div class="jumbotron-container">
+          <div class="logotron">
+            <h1>Upload Center</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <form action="https://formspree.io/blacktipgraphics@yahoo.com"
+        method="POST">
+        <input type="text" name="name" placeholder="Company Name">
+        <input type="text" name="description" placeholder="Brief Description....">
+        <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="e49bc537be1dee156729"/>
+        <input type="submit" value="Send">
+      </form>
+
+  </body>
+</html>

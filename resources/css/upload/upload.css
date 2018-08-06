@@ -1,0 +1,52 @@
+html {
+  font-family: "Comfortaa", sans-serif;
+}
+/* Header */
+
+header {
+  background-color: #096675;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+nav li {
+  width: 10vw;
+  font-size: 2.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #6ae6fc;
+  transition: 0.3s;
+}
+
+/* Landing */
+
+.landing-area {
+  display: flex;
+  justify-content: center;
+}
+
+.logotron {
+  margin-top: 10vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 6vh;
+  padding: 3vh;
+  color: white;
+}

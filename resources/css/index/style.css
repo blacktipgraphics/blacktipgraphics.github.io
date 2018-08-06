@@ -1,0 +1,55 @@
+html {
+  font-family: "Comfortaa", sans-serif;
+}
+/* Header */
+
+header {
+  background-color: #096675;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+nav li {
+  width: 10vw;
+  font-size: 2.4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #6ae6fc;
+  transition: 0.3s;
+}
+
+/* Landing */
+
+.landing-area {
+  background-image: url("../../images/background.jpg");
+  height: 91vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.logotron {
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3vh 4vh 4vh 4vh;
+}
