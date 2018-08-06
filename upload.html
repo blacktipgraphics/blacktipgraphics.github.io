@@ -6,7 +6,12 @@
     <link href="./resources/css/upload/upload.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <title>Upload</title>
-    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+    <script>
+  UPLOADCARE_LOCALE = "en";
+  UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram evernote flickr skydrive";
+  UPLOADCARE_PUBLIC_KEY = "e49bc537be1dee156729";
+    </script>
+    <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
   </head>
   <body>
 
@@ -34,14 +39,15 @@
         </div>
       </div>
 
-
+      <div class="form">
       <form action="https://formspree.io/blacktipgraphics@yahoo.com"
         method="POST">
         <input type="text" name="name" placeholder="Company Name">
         <input type="text" name="description" placeholder="Brief Description....">
-        <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="e49bc537be1dee156729"/>
+        <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" />
         <input type="submit" value="Send">
       </form>
+      </div>
 
   </body>
 </html>
