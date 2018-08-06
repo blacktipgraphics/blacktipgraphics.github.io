@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
     <title>Upload</title>
     <script>
-  UPLOADCARE_LOCALE = "en";
-  UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram evernote flickr skydrive";
-  UPLOADCARE_PUBLIC_KEY = "e49bc537be1dee156729";
-    </script>
-    <script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+  UPLOADCARE_PUBLIC_KEY = 'e49bc537be1dee156729';
+  UPLOADCARE_PREVIEW_STEP = true;
+  UPLOADCARE_CLEARABLE = true;
+</script>
+
+<script src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
   </head>
   <body>
 
@@ -44,7 +45,7 @@
         method="POST">
         <input type="text" name="name" placeholder="Company Name">
         <input type="text" name="description" placeholder="Brief Description....">
-        <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" />
+        <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" data-multiple-min="1" />
         <input type="submit" value="Send">
       </form>
       </div>
